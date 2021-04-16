@@ -2,7 +2,7 @@
 
 # №1
 # def prnt():
-#     str = input('Введите строку: ')
+#     str = input('Введите строку: ')  # str не называй переменную, а то если дальше схочешь сделать преобразования str(number) то сломается
 #     print (f'{str[2]}', str[-2], str[:5], str[:-2],
 #         str[: : 2], str[: : 1],str[1: : 2],
 #         str[ : : -1],str[ : : -2],str[-2:1:-1],
@@ -15,9 +15,9 @@
 def strdiv():
     import math
     str = input('Введите строку: ')
-    n = math.ceil(len(str)/2)
+    n = math.ceil(len(str)/2) # yназивай переменые более осознаное лучше this_number_i_use_when_user_ask_me_about_something чим n 
     str1 = str[:n]
-    print(str1)
+    print(str1)  # Принты подчищай если они не нужны
     str2 = str[n:]
     print(str2)
     res = str2+str1
@@ -44,7 +44,7 @@ def loop(n):
 #loop(20)
 
 #3.3
-def loopdiv(n):
+def loopdiv(n):  # Використовуй camel_case
     count = 0
     while n >= 1:
         if (n%2==0):
@@ -104,7 +104,7 @@ def del_min(mas):
 def hw_4_4(str):
 
     str = str + ' '
-    dict = {}
+    dict = {}  # dict зарезервированое слово как и стр не используй тоже
 
     counter = 1
     iter = len(str)
